@@ -1,5 +1,11 @@
 # Word-Analogy-in-Nepali-Language
 
+### Testing the word analogy : 
+
+
+
+
+
 
 
 ### Sources : 
