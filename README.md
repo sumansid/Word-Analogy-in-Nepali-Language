@@ -2,7 +2,7 @@
 
 ### Testing the word analogy : 
 
-##### केटा --> केटी, राजा --> ? (Boy --> Girl, King --> ?) 
+##### Input : केटा --> केटी, राजा --> ? (Boy --> Girl, King --> ?) 
 
 <img width="673" alt="Screen Shot 2020-04-27 at 1 51 09 PM" src="https://user-images.githubusercontent.com/53033648/80403961-76e9f880-888e-11ea-8824-97db6e956f6e.png">
 
