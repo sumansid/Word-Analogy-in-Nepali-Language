@@ -1,6 +1,6 @@
 # Word-Analogy-in-Nepali-Language
 
-### Testing the word analogy : 
+### Example of the word analogy : 
 
 ##### Input : केटा --> केटी, राजा --> ? (Boy --> Girl, King --> ?) 
 
