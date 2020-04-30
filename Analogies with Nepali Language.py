@@ -61,16 +61,10 @@ def cosine_similarity(u,v):
     return cosine_similarity
 
 
-# In[7]:
-
 
 word_u = word_to_vec_map["ठमेल"]
 word_v = word_to_vec_map["न्यूरोड"]
 cosine_similarity(word_u,word_v)
-
-
-# In[18]:
-
 
 def analogy_finder(word_a, word_b, word_c, word_2_vec_map, word_list):
     e_a, e_b, e_c = word_2_vec_map[word_a],word_to_vec_map[word_b],word_to_vec_map[word_c]
@@ -93,23 +87,11 @@ def analogy_finder(word_a, word_b, word_c, word_2_vec_map, word_list):
         
     return final_word
 
-
-# In[19]:
-
-
 word_a = "केटा"
 word_b = "केटी"
 word_c = "राजा"
 analogy_finder(word_a,word_b,word_c,word_to_vec_map, words)
 
-
-# In[ ]:
-
-
-
-
-
-# In[ ]:
 
 
 
