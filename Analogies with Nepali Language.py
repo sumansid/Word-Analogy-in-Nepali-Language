@@ -1,25 +1,15 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# ##  Analogies with Nepali Language
-# 
 
-# In[1]:
-
-
+# Imports
 import numpy as np
-
-
-# In[2]:
 
 
 ## File Paths
 word_2_vec = "nepali_embeddings_word2vec.txt"
 
-
-# In[3]:
-
-
+# Function that reads the pretrained file
 def read_word_to_vecs(pretrained_file):
     with open(pretrained_file, 'r') as f:
         words = set()
@@ -34,13 +24,7 @@ def read_word_to_vecs(pretrained_file):
     return words, word_to_vec_map
 
 
-# In[4]:
-
-
 words, word_to_vec_map = read_word_to_vecs(word_2_vec)
-
-
-# In[5]:
 
 
 def cosine_similarity(u,v): 
@@ -54,12 +38,11 @@ def cosine_similarity(u,v):
     """
     # dot product of the word vectors
     dot_product = np.dot(u,v)
-    # L2 norms ie. Distance
+    # L2 norms ie. Euclidean Distance
     dist_u = np.sqrt(np.sum(u**2))
     dist_v = np.sqrt(np.sum(v**2))
     cosine_similarity = dot_product/(dist_u*dist_v)
     return cosine_similarity
-
 
 
 word_u = word_to_vec_map["ठमेल"]
@@ -91,7 +74,6 @@ word_a = "केटा"
 word_b = "केटी"
 word_c = "राजा"
 analogy_finder(word_a,word_b,word_c,word_to_vec_map, words)
-
 
 
 
