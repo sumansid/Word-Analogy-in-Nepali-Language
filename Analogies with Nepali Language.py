@@ -5,10 +5,8 @@ Author : Suman Sigdel
 File : Analogies with Nepali Language, Python file that contains functions that find the analogies in Nepali language using a pretrained word2vec model.
 """
 
-
 # Imports
 import numpy as np
-
 
 ## File Paths
 word_2_vec = "nepali_embeddings_word2vec.txt"
@@ -27,9 +25,7 @@ def read_word_to_vecs(pretrained_file):
             
     return words, word_to_vec_map
 
-
 words, word_to_vec_map = read_word_to_vecs(word_2_vec)
-
 
 def cosine_similarity(u,v): 
     """
@@ -37,8 +33,7 @@ def cosine_similarity(u,v):
     V : Word vector
     
     Returns : 
-        Cosine similarity
-    
+        Cosine similarity of two words ie. u & v
     """
     # dot product of the word vectors
     dot_product = np.dot(u,v)
@@ -47,7 +42,6 @@ def cosine_similarity(u,v):
     dist_v = np.sqrt(np.sum(v**2))
     cosine_similarity = dot_product/(dist_u*dist_v)
     return cosine_similarity
-
 
 word_u = word_to_vec_map["ठमेल"]
 word_v = word_to_vec_map["न्यूरोड"]
