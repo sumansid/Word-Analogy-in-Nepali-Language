@@ -1,5 +1,4 @@
 #!/usr/bin/env python
-# coding: utf-8
 
 
 # Imports
@@ -74,7 +73,3 @@ word_a = "केटा"
 word_b = "केटी"
 word_c = "राजा"
 analogy_finder(word_a,word_b,word_c,word_to_vec_map, words)
-
-
-
-
