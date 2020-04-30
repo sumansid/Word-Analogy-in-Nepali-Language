@@ -1,4 +1,9 @@
 #!/usr/bin/env python
+"""
+Date : 04/30/2020
+Author : Suman Sigdel
+File : Analogies with Nepali Language, Python file that contains functions that find the analogies in Nepali language using a pretrained word2vec model.
+"""
 
 
 # Imports
