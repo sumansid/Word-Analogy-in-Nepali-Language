@@ -30,7 +30,7 @@ words, word_to_vec_map = read_word_to_vecs(word_2_vec)
 def cosine_similarity(u,v): 
     """
     u : Word vector
-    V : Word vector
+    v : Word vector
     
     Returns : 
         Cosine similarity of two words ie. u & v
@@ -45,9 +45,16 @@ def cosine_similarity(u,v):
 
 word_u = word_to_vec_map["ठमेल"]
 word_v = word_to_vec_map["न्यूरोड"]
-cosine_similarity(word_u,word_v)
+print(cosine_similarity(word_u,word_v))
 
 def analogy_finder(word_a, word_b, word_c, word_2_vec_map, word_list):
+    """
+    word_a : 
+    word_b :
+    word_c : 
+    word_2_vec_map : 
+    word_list : 
+    """
     e_a, e_b, e_c = word_2_vec_map[word_a],word_to_vec_map[word_b],word_to_vec_map[word_c]
     words = word_list
     max_cosine_similarity = -100.00 # Big negative number
@@ -68,7 +75,8 @@ def analogy_finder(word_a, word_b, word_c, word_2_vec_map, word_list):
         
     return final_word
 
+# Example words
 word_a = "केटा"
 word_b = "केटी"
 word_c = "राजा"
-analogy_finder(word_a,word_b,word_c,word_to_vec_map, words)
+print(analogy_finder(word_a,word_b,word_c,word_to_vec_map, words))
